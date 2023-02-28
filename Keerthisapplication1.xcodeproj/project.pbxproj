@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56D87F0B29AE0CF500D5A77B /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D87F0A29AE0CF500D5A77B /* DashboardModel.swift */; };
 		71C8E7893F42B3696758AE91 /* ColumnsearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42B36F745BCA3AB369A93D /* ColumnsearchCell.swift */; };
 		7F44DBA127422A5D00171570 /* ActivityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F44DBA027422A5D00171570 /* ActivityLoader.swift */; };
 		884F3E5127B0E65A00963FC4 /* RoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F3E5027B0E65A00963FC4 /* RoundedCornersView.swift */; };
@@ -39,6 +40,7 @@
 		4404ADF8A2913CBAC29CB55C /* Pods-Keerthisapplication1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keerthisapplication1.debug.xcconfig"; path = "Target Support Files/Pods-Keerthisapplication1/Pods-Keerthisapplication1.debug.xcconfig"; sourceTree = "<group>"; };
 		487BC8F82ED72BAE3E2BAACA /* ColorConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		507471A8E7CD39846D9CBFC6 /* Pods-Keerthisapplication1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keerthisapplication1.release.xcconfig"; path = "Target Support Files/Pods-Keerthisapplication1/Pods-Keerthisapplication1.release.xcconfig"; sourceTree = "<group>"; };
+		56D87F0A29AE0CF500D5A77B /* DashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModel.swift; sourceTree = "<group>"; };
 		7F44DBA027422A5D00171570 /* ActivityLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLoader.swift; sourceTree = "<group>"; };
 		884F3E5027B0E65A00963FC4 /* RoundedCornersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
 		8853052527718DC500B04E6F /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 			path = TabViews;
 			sourceTree = "<group>";
 		};
+		56D87F0929AE0CA700D5A77B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56D87F0A29AE0CF500D5A77B /* DashboardModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7F44DB9E27422A4200171570 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +144,7 @@
 		88ED74E6272FFE6E0088E3EF /* Keerthisapplication1 */ = {
 			isa = PBXGroup;
 			children = (
+				56D87F0929AE0CA700D5A77B /* Models */,
 				88ED74FC272FFECA0088E3EF /* Services */,
 				88ED74FE272FFECA0088E3EF /* Application */,
 				88ED74F8272FFECA0088E3EF /* Constants */,
@@ -384,6 +395,7 @@
 			files = (
 				888CB47527686A000041116C /* APIExtensions.swift in Sources */,
 				8853052A27718E2D00B04E6F /* EncodableExtension.swift in Sources */,
+				56D87F0B29AE0CF500D5A77B /* DashboardModel.swift in Sources */,
 				8853052C2771949600B04E6F /* UINavigationController.swift in Sources */,
 				88ED7503272FFECA0088E3EF /* APIManager.swift in Sources */,
 				7F44DBA127422A5D00171570 /* ActivityLoader.swift in Sources */,

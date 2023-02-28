@@ -2,12 +2,12 @@ import SwiftUI
 
 struct DashboardView: View {
     @StateObject var dashboardViewModel = DashboardViewModel()
-    //@StateObject var link = LinksView()
+    @State private var model: DashboardModel?
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     init() {
-    UITabBar.appearance().backgroundColor = UIColor.white
-
+        UITabBar.appearance().backgroundColor = UIColor.white
     }
+    
     var body: some View {
         VStack {
             VStack(alignment: .leading, spacing: 0) {
@@ -24,6 +24,12 @@ struct DashboardView: View {
                                        height: getRelativeHeight(24.0), alignment: .topLeading)
                                 .padding(.top, getRelativeHeight(6.0))
                                 .padding(.bottom, getRelativeHeight(9.0))
+                                /*.onAppear {
+                                    Api().loadData { dashboardModel in
+                                        model = dashboardModel
+                                        print("dashnoard model----\(model)")
+                                    }
+                                }*/
                             Spacer()
                             Button(action: {}, label: {
                                 Image("img_search")
@@ -1056,23 +1062,38 @@ struct DashboardView: View {
                                     .fill(Color.clear.opacity(0.7)))
                             .padding(.top, getRelativeHeight(20.0))
                             .padding(.horizontal, getRelativeWidth(10.0))
-                            HStack {
-                                Spacer()
-                                Image("img_vector")
-                                    .resizable()
-                                    .frame(width: getRelativeWidth(24.0),
-                                           height: getRelativeWidth(24.0), alignment: .center)
-                                    .scaledToFit()
-                                    .clipped()
-                                    .padding(.vertical, getRelativeHeight(20.0))
-                                    .padding(.horizontal, getRelativeWidth(12.0))
-                                TextField(StringConstants.kLblTalkWithUs,
-                                          text: $dashboardViewModel.frame7671Text)
-                                    .font(FontScheme
-                                        .kFigtreeSemiBold(size: getRelativeHeight(16.0)))
-                                    .foregroundColor(ColorConstants.Black900)
-                                    .padding()
+                            Button(action: {
+                                let phoneNumber =  "+918297368106"
+                                let appURL = URL(string: "https://api.whatsapp.com/send?phone=\(phoneNumber)")!
+                                if UIApplication.shared.canOpenURL(appURL) {
+                                    if #available(iOS 10.0, *) {
+                                        UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
+                                    }
+                                    else {
+                                        UIApplication.shared.openURL(appURL)
+                                    }
+                                }
+                            }) {
+                                HStack {
+                                    Spacer()
+                                    Image("img_vector")
+                                        .resizable()
+                                        .frame(width: getRelativeWidth(24.0),
+                                               height: getRelativeWidth(24.0), alignment: .center)
+                                        .scaledToFit()
+                                        .clipped()
+                                        .padding(.vertical, getRelativeHeight(20.0))
+                                        .padding(.horizontal, getRelativeWidth(12.0))
+                                    TextField(StringConstants.kLblTalkWithUs,
+                                              text: $dashboardViewModel.frame7671Text)
+                                        .font(FontScheme
+                                            .kFigtreeSemiBold(size: getRelativeHeight(16.0)))
+                                        .foregroundColor(ColorConstants.Black900)
+                                        .padding()
+                                    
+                                }
                             }
+                            
                             .frame(width: getRelativeWidth(328.0), height: getRelativeHeight(64.0),
                                    alignment: .center)
                             .overlay(RoundedCorners(topLeft: 8.0, topRight: 8.0, bottomLeft: 8.0,
