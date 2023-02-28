@@ -24,12 +24,12 @@ struct DashboardView: View {
                                        height: getRelativeHeight(24.0), alignment: .topLeading)
                                 .padding(.top, getRelativeHeight(6.0))
                                 .padding(.bottom, getRelativeHeight(9.0))
-                                /*.onAppear {
+                                .onAppear {
                                     Api().loadData { dashboardModel in
                                         model = dashboardModel
                                         print("dashnoard model----\(model)")
                                     }
-                                }*/
+                                }
                             Spacer()
                             Button(action: {}, label: {
                                 Image("img_search")
