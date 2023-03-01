@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		567E45B129AF44E700C097C0 /* ColumnsearchCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567E45B029AF44E700C097C0 /* ColumnsearchCell1.swift */; };
+		567E45B329AF45AA00C097C0 /* ColumnsearchCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567E45B229AF45AA00C097C0 /* ColumnsearchCell2.swift */; };
+		567E45B529AF46CB00C097C0 /* ColumnsearchCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567E45B429AF46CB00C097C0 /* ColumnsearchCell3.swift */; };
 		56D87F0B29AE0CF500D5A77B /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D87F0A29AE0CF500D5A77B /* DashboardModel.swift */; };
 		71C8E7893F42B3696758AE91 /* ColumnsearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42B36F745BCA3AB369A93D /* ColumnsearchCell.swift */; };
 		7F44DBA127422A5D00171570 /* ActivityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F44DBA027422A5D00171570 /* ActivityLoader.swift */; };
@@ -40,6 +43,9 @@
 		4404ADF8A2913CBAC29CB55C /* Pods-Keerthisapplication1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keerthisapplication1.debug.xcconfig"; path = "Target Support Files/Pods-Keerthisapplication1/Pods-Keerthisapplication1.debug.xcconfig"; sourceTree = "<group>"; };
 		487BC8F82ED72BAE3E2BAACA /* ColorConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		507471A8E7CD39846D9CBFC6 /* Pods-Keerthisapplication1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keerthisapplication1.release.xcconfig"; path = "Target Support Files/Pods-Keerthisapplication1/Pods-Keerthisapplication1.release.xcconfig"; sourceTree = "<group>"; };
+		567E45B029AF44E700C097C0 /* ColumnsearchCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnsearchCell1.swift; sourceTree = "<group>"; };
+		567E45B229AF45AA00C097C0 /* ColumnsearchCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnsearchCell2.swift; sourceTree = "<group>"; };
+		567E45B429AF46CB00C097C0 /* ColumnsearchCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnsearchCell3.swift; sourceTree = "<group>"; };
 		56D87F0A29AE0CF500D5A77B /* DashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModel.swift; sourceTree = "<group>"; };
 		7F44DBA027422A5D00171570 /* ActivityLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLoader.swift; sourceTree = "<group>"; };
 		884F3E5027B0E65A00963FC4 /* RoundedCornersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
@@ -274,6 +280,9 @@
 			isa = PBXGroup;
 			children = (
 				BE42B36F745BCA3AB369A93D /* ColumnsearchCell.swift */,
+				567E45B029AF44E700C097C0 /* ColumnsearchCell1.swift */,
+				567E45B229AF45AA00C097C0 /* ColumnsearchCell2.swift */,
+				567E45B429AF46CB00C097C0 /* ColumnsearchCell3.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -400,12 +409,15 @@
 				88ED7503272FFECA0088E3EF /* APIManager.swift in Sources */,
 				7F44DBA127422A5D00171570 /* ActivityLoader.swift in Sources */,
 				8853052627718DC500B04E6F /* ViewExtension.swift in Sources */,
+				567E45B129AF44E700C097C0 /* ColumnsearchCell1.swift in Sources */,
 				88ED7500272FFECA0088E3EF /* Utilities.swift in Sources */,
 				88ED7504272FFECA0088E3EF /* Keerthisapplication1App.swift in Sources */,
 				C40AB9F82754D79E006BC5D7 /* AppDelegate.swift in Sources */,
 				88680D1C2775C601002E964F /* ViewportHelper.swift in Sources */,
 				88ED7501272FFECA0088E3EF /* AppConstants.swift in Sources */,
+				567E45B529AF46CB00C097C0 /* ColumnsearchCell3.swift in Sources */,
 				884F3E5127B0E65A00963FC4 /* RoundedCornersView.swift in Sources */,
+				567E45B329AF45AA00C097C0 /* ColumnsearchCell2.swift in Sources */,
 				FEE7576C4AE1197EFEF7C244 /* StringScheme.swift in Sources */,
 				AA43FAA96FC8CAA7EBB03CA1 /* ColorConstants.swift in Sources */,
 				9391E1F1E0FF158BC8A8EF5C /* FontScheme.swift in Sources */,

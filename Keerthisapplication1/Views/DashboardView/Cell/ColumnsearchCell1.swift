@@ -1,6 +1,13 @@
+//
+//  ColumnsearchCell1.swift
+//  Keerthisapplication1
+//
+//  Created by Keerthi Devipriya(kdp) on 01/03/23.
+//
+
 import SwiftUI
 
-struct ColumnsearchCell: View {
+struct ColumnsearchCell1: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Button(action: {}, label: {
@@ -13,7 +20,7 @@ struct ColumnsearchCell: View {
                     .fill(ColorConstants.DeepPurple5001e))
             .padding(.top, getRelativeHeight(12.0))
             .padding(.horizontal, getRelativeWidth(12.0))
-            Text(StringConstants.todayClicks)
+            Text(StringConstants.totalLinksVal)
                 .font(FontScheme.kFigtreeSemiBold(size: getRelativeHeight(16.0)))
                 .fontWeight(.semibold)
                 .foregroundColor(ColorConstants.Black900)
@@ -23,7 +30,7 @@ struct ColumnsearchCell: View {
                        alignment: .leading)
                 .padding(.top, getRelativeHeight(20.0))
                 .padding(.horizontal, getRelativeWidth(12.0))
-            Text(StringConstants.kLblTodaySClicks)
+            Text(StringConstants.totalLinks)
                 .font(FontScheme.kFigtreeRegular(size: getRelativeHeight(14.0)))
                 .fontWeight(.regular)
                 .foregroundColor(ColorConstants.Gray500)
@@ -42,9 +49,8 @@ struct ColumnsearchCell: View {
     }
 }
 
-/* struct ColumnsearchCell_Previews: PreviewProvider {
-
- static var previews: some View {
- 			ColumnsearchCell()
- }
- } */
+/*struct ColumnsearchCell1_Previews: PreviewProvider {
+    static var previews: some View {
+        ColumnsearchCell1()
+    }
+}*/

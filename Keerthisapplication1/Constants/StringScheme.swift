@@ -42,4 +42,31 @@ struct StringConstants {
     static let kMsgSampleLinkNam: String = "Sample link name..."
     static let kMsgFrequentlyAske: String = "Frequently Asked Questions"
     static let kLblTopLocation: String = "Top Location"
+    
+    static let amazonTitle = "Match Women's Long Sleeve Flannel Plaid Shirt at Amazon Women’s Clothing store"
+    static let flipkartTitle = "YouTube"
+    static let facebooktitle = "Website Designing & Development"
+    static let youtubeTitle = "Can't Help Falling In Love - Elvis Presley (Boyce Avenue acoustic cover) on Spotify & Apple"
+    
+    
+    static let amazonClicks = "56"
+    static let flipkartClicks = "39"
+    static let facebookClicks = "36"
+    static let youtubeClicks = "160"
+    
+    static let amazonDate = "23 Sep 2022"
+    static let flipkartDate = "20 Feb 2023"
+    static let facebookDate = "12 Jan 2022"
+    static let youtubeDate = "12 Jan 2022"
+    
+    
+    static let totalLinks = "Total Links"
+    static let todayClicks = "700"
+    static let totalLinksVal = "176"
+    
+    
+    static let flipkartLink = "dream.inopenapp.com/vid"
+    static let amazonLink = "amazon.inopenapp.com/b01n5qh183"
+    static let facebookLink = "https://inopenapp.com/facebook/fbd42"
+    static let youtubeLink = "https://boyceavenue.inopenapp.com/boyce-avenue"
 }

@@ -24,12 +24,12 @@ struct DashboardView: View {
                                        height: getRelativeHeight(24.0), alignment: .topLeading)
                                 .padding(.top, getRelativeHeight(6.0))
                                 .padding(.bottom, getRelativeHeight(9.0))
-                                .onAppear {
+                                /*.onAppear {
                                     Api().loadData { dashboardModel in
                                         model = dashboardModel
                                         print("dashnoard model----\(model)")
                                     }
-                                }
+                                }*/
                             Spacer()
                             Button(action: {}, label: {
                                 Image("img_search")
@@ -487,9 +487,13 @@ struct DashboardView: View {
                             HStack(spacing: 0) {
                                 ScrollView(.horizontal, showsIndicators: false) {
                                     LazyHStack {
-                                        ForEach(0 ... 3, id: \.self) { index in
+                                        ColumnsearchCell()
+                                        ColumnsearchCell1()
+                                        ColumnsearchCell2()
+                                        ColumnsearchCell3()
+                                        /*ForEach(0 ... 3, id: \.self) { index in
                                             ColumnsearchCell()
-                                        }
+                                        }*/
                                     }
                                 }
                             }
@@ -593,7 +597,7 @@ struct DashboardView: View {
                             VStack {
                                 HStack {
                                     HStack {
-                                        Image("img_rectangle808")
+                                        Image("youtubeIcon")
                                             .resizable()
                                             .frame(width: getRelativeWidth(48.0),
                                                    height: getRelativeWidth(48.0),
@@ -604,7 +608,7 @@ struct DashboardView: View {
                                                                        bottomLeft: 8.0,
                                                                        bottomRight: 8.0))
                                         VStack(alignment: .leading, spacing: 0) {
-                                            Text(StringConstants.kMsgSampleLinkNam)
+                                            Text(StringConstants.youtubeTitle)
                                                 .font(FontScheme
                                                     .kFigtreeRegular(size: getRelativeHeight(14.0)))
                                                 .fontWeight(.regular)
@@ -614,7 +618,7 @@ struct DashboardView: View {
                                                 .frame(width: getRelativeWidth(120.0),
                                                        height: getRelativeHeight(14.0),
                                                        alignment: .topLeading)
-                                            Text(StringConstants.kLbl22Aug2022)
+                                            Text(StringConstants.youtubeDate)
                                                 .font(FontScheme
                                                     .kFigtreeRegular(size: getRelativeHeight(12.0)))
                                                 .fontWeight(.regular)
@@ -635,7 +639,7 @@ struct DashboardView: View {
                                            height: getRelativeHeight(48.0), alignment: .center)
                                     Spacer()
                                     VStack(alignment: .leading, spacing: 0) {
-                                        Text(StringConstants.kLbl2323)
+                                        Text(StringConstants.youtubeClicks)
                                             .font(FontScheme
                                                 .kFigtreeSemiBold(size: getRelativeHeight(14.0)))
                                             .fontWeight(.semibold)
@@ -667,7 +671,7 @@ struct DashboardView: View {
                                 .padding(.top, getRelativeHeight(12.0))
                                 .padding(.horizontal, getRelativeWidth(12.0))
                                 HStack {
-                                    TextField(StringConstants.kMsgHttpsSamplel,
+                                    TextField(StringConstants.youtubeLink,
                                               text: $dashboardViewModel.group7542Text)
                                         .font(FontScheme
                                             .kFigtreeRegular(size: getRelativeHeight(14.0)))
@@ -702,7 +706,7 @@ struct DashboardView: View {
                             VStack {
                                 HStack {
                                     HStack {
-                                        Image("img_rectangle808")
+                                        Image("amzShirt")
                                             .resizable()
                                             .frame(width: getRelativeWidth(48.0),
                                                    height: getRelativeWidth(48.0),
@@ -713,7 +717,7 @@ struct DashboardView: View {
                                                                        bottomLeft: 8.0,
                                                                        bottomRight: 8.0))
                                         VStack(alignment: .leading, spacing: 0) {
-                                            Text(StringConstants.kMsgSampleLinkNam)
+                                            Text(StringConstants.amazonTitle)
                                                 .font(FontScheme
                                                     .kFigtreeRegular(size: getRelativeHeight(14.0)))
                                                 .fontWeight(.regular)
@@ -723,7 +727,7 @@ struct DashboardView: View {
                                                 .frame(width: getRelativeWidth(120.0),
                                                        height: getRelativeHeight(14.0),
                                                        alignment: .topLeading)
-                                            Text(StringConstants.kLbl22Aug2022)
+                                            Text(StringConstants.amazonDate)
                                                 .font(FontScheme
                                                     .kFigtreeRegular(size: getRelativeHeight(12.0)))
                                                 .fontWeight(.regular)
@@ -744,7 +748,7 @@ struct DashboardView: View {
                                            height: getRelativeHeight(48.0), alignment: .center)
                                     Spacer()
                                     VStack(alignment: .leading, spacing: 0) {
-                                        Text(StringConstants.kLbl2323)
+                                        Text(StringConstants.amazonClicks)
                                             .font(FontScheme
                                                 .kFigtreeSemiBold(size: getRelativeHeight(14.0)))
                                             .fontWeight(.semibold)
@@ -776,7 +780,7 @@ struct DashboardView: View {
                                 .padding(.top, getRelativeHeight(12.0))
                                 .padding(.horizontal, getRelativeWidth(12.0))
                                 HStack {
-                                    TextField(StringConstants.kMsgHttpsSamplel,
+                                    TextField(StringConstants.amazonLink,
                                               text: $dashboardViewModel.group7542oneText)
                                         .font(FontScheme
                                             .kFigtreeRegular(size: getRelativeHeight(14.0)))
@@ -813,7 +817,7 @@ struct DashboardView: View {
                             VStack {
                                 HStack {
                                     HStack {
-                                        Image("img_rectangle808")
+                                        Image("flipkartIcon")
                                             .resizable()
                                             .frame(width: getRelativeWidth(48.0),
                                                    height: getRelativeWidth(48.0),
@@ -824,7 +828,7 @@ struct DashboardView: View {
                                                                        bottomLeft: 8.0,
                                                                        bottomRight: 8.0))
                                         VStack(alignment: .leading, spacing: 0) {
-                                            Text(StringConstants.kMsgSampleLinkNam)
+                                            Text(StringConstants.flipkartTitle)
                                                 .font(FontScheme
                                                     .kFigtreeRegular(size: getRelativeHeight(14.0)))
                                                 .fontWeight(.regular)
@@ -834,7 +838,7 @@ struct DashboardView: View {
                                                 .frame(width: getRelativeWidth(120.0),
                                                        height: getRelativeHeight(14.0),
                                                        alignment: .topLeading)
-                                            Text(StringConstants.kLbl22Aug2022)
+                                            Text(StringConstants.flipkartDate)
                                                 .font(FontScheme
                                                     .kFigtreeRegular(size: getRelativeHeight(12.0)))
                                                 .fontWeight(.regular)
@@ -855,7 +859,7 @@ struct DashboardView: View {
                                            height: getRelativeHeight(48.0), alignment: .center)
                                     Spacer()
                                     VStack(alignment: .leading, spacing: 0) {
-                                        Text(StringConstants.kLbl2323)
+                                        Text(StringConstants.flipkartClicks)
                                             .font(FontScheme
                                                 .kFigtreeSemiBold(size: getRelativeHeight(14.0)))
                                             .fontWeight(.semibold)
@@ -887,7 +891,7 @@ struct DashboardView: View {
                                 .padding(.top, getRelativeHeight(12.0))
                                 .padding(.horizontal, getRelativeWidth(12.0))
                                 HStack {
-                                    TextField(StringConstants.kMsgHttpsSamplel,
+                                    TextField(StringConstants.flipkartLink,
                                               text: $dashboardViewModel.group7542twoText)
                                         .font(FontScheme
                                             .kFigtreeRegular(size: getRelativeHeight(14.0)))
@@ -922,7 +926,7 @@ struct DashboardView: View {
                             VStack {
                                 HStack {
                                     HStack {
-                                        Image("img_rectangle808")
+                                        Image("fbIcon")
                                             .resizable()
                                             .frame(width: getRelativeWidth(48.0),
                                                    height: getRelativeWidth(48.0),
@@ -933,7 +937,7 @@ struct DashboardView: View {
                                                                        bottomLeft: 8.0,
                                                                        bottomRight: 8.0))
                                         VStack(alignment: .leading, spacing: 0) {
-                                            Text(StringConstants.kMsgSampleLinkNam)
+                                            Text(StringConstants.facebooktitle)
                                                 .font(FontScheme
                                                     .kFigtreeRegular(size: getRelativeHeight(14.0)))
                                                 .fontWeight(.regular)
@@ -943,7 +947,7 @@ struct DashboardView: View {
                                                 .frame(width: getRelativeWidth(120.0),
                                                        height: getRelativeHeight(14.0),
                                                        alignment: .topLeading)
-                                            Text(StringConstants.kLbl22Aug2022)
+                                            Text(StringConstants.facebookDate)
                                                 .font(FontScheme
                                                     .kFigtreeRegular(size: getRelativeHeight(12.0)))
                                                 .fontWeight(.regular)
@@ -964,7 +968,7 @@ struct DashboardView: View {
                                            height: getRelativeHeight(48.0), alignment: .center)
                                     Spacer()
                                     VStack(alignment: .leading, spacing: 0) {
-                                        Text(StringConstants.kLbl2323)
+                                        Text(StringConstants.facebookClicks)
                                             .font(FontScheme
                                                 .kFigtreeSemiBold(size: getRelativeHeight(14.0)))
                                             .fontWeight(.semibold)
@@ -996,7 +1000,7 @@ struct DashboardView: View {
                                 .padding(.top, getRelativeHeight(12.0))
                                 .padding(.horizontal, getRelativeWidth(12.0))
                                 HStack {
-                                    TextField(StringConstants.kMsgHttpsSamplel,
+                                    TextField(StringConstants.facebookLink,
                                               text: $dashboardViewModel.group7542threeText)
                                         .font(FontScheme
                                             .kFigtreeRegular(size: getRelativeHeight(14.0)))
